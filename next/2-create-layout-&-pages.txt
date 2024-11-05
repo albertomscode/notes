@@ -1,0 +1,18 @@
+- Layout: todo lo que escribamos en el layout aparecerá en todas las páginas. Normalmente se suele escribir la barra de navegación (y cuando anadas la barra 
+de navegacion no te olvides de poner el import Link from "next/link";).
+
+- El archivo page.js que te viene al lado del layout debería ser tu página de home.
+
+- Luego cada folder o carpeta que creas va a ser una pagina nueva en tu pagina web. El archivo siempre se debe llamar page.js
+
+- El contenido de las paginas debe tener esto:
+
+        export default function Ejemplo() {
+        return <p>Contenido de ejemplo</p>;
+        }
+
+- Y para paginas donde decidimos pedir info a la database se deberia de ver así:
+
+        export default async function ejemplo() {
+        return <p>Pagina de ejemplo</p>;
+        }

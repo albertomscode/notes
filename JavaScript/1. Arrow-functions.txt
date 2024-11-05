@@ -1,0 +1,44 @@
+
+----------------ANTES----------------
+
+function add(a, b) {
+  return a + b;
+}
+
+add(1, 2); // 3
+
+ 
+
+----------------AHORA----------------
+
+const add = (a, b) => {
+  return a + b;
+};
+
+add(1, 2); // 3
+
+
+RESUMEN: Basicamente cuando veas un "=>" es una funcion.
+-------
+
+
+Buscar ejemplos reales para entender los callbacks.
+
+
+--------------Ejemplo 1-----------------
+
+
+function isButtonDisabled(key) {
+    return disabledButtons.includes(key);
+  }
+
+--------------Ejemplo 2-----------------
+
+
+  function assignClass(key) {
+    if (isButtonDisabled(key)) {
+      return "disabled";
+    } else {
+      return;
+    }
+  }

@@ -1,0 +1,42 @@
+Para que recuerdes como se hacia un proyecto con solo react te recuerdo que todo se hacia en el archivo js, que en este caso siempre es jsx.
+Es decir, que el html se hace en el archivo jsx tambien.
+Como ejemplo te voy a poner este archivo jsx:
+
+import { useState } from "react";
+import PageHeader from "./components/PageHeader";
+import CountButton from "./components/CountButton";
+
+export default function App() {
+  const [count, setCount] = useState(0);
+
+  function handleCount() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <PageHeader count={count} />
+      <CountButton handleCount={handleCount} />
+    </div>
+  );
+}
+
+1. IMPORTS. Como ves arriba vas a poner ese tipo de cosas en los import.
+2. LO QUE SIEMPRE DEBE LLEVAR EL ARCHIVO JSX. Luego, siempre vas a tener un export default function EjemploDeNombre() {
+   aqui imagino que escribes las constantes que quieras;
+
+   ...}
+
+3. FUNCIONES. entro del export vas a escribir las funciones escritas asi:
+
+    function ejemploNombre (){  //el nombre de la funcion siempre tiene la primera palabra en minuscula y las siguientes en mayusculas.
+      y aqui escribes la funcion;
+    }
+
+4. RETURN. Siempre lleva un return con un div y dentro del div ya crear todo lo que quieras poner en la UI como cualquier archivo html y podras incluir los componentes
+que hayas creado previamente. Se van a importar de la manera que pone el ejemplo que te puse antes:
+
+    import PageHeader from "./components/PageHeader";
+    import CountButton from "./components/CountButton";
+
+

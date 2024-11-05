@@ -1,0 +1,82 @@
+RESUMEN: Lo que antes era el local Storage, ahora es useState.
+
+El estado se utiliza para almacenar datos que cambian con el tiempo. Por ejemplo, el número de galletas en el juego Cookie Clicker 
+es un ejemplo de estado. El número cambia con el tiempo, y los componentes que muestran el número de galletas deben actualizarse cuando eso sucede.
+
+El hook useState se utiliza para almacenar el estado en los componentes React.
+Es una función que devuelve un array con dos valores: el valor actual del estado y una función para actualizar ese valor.
+
+-------------------EJEMPLO-------------------
+
+import { useState } from "react";
+
+export default function App() {
+  const [myCounterState, setMyCounterState] = useState(0);
+
+  function incrementCounter() {
+    setMyCounterState(myCounterState + 1);
+  }
+
+  return (
+    <div>
+      <p>{myCounterState} cookies.</p>
+      <button onClick={incrementCounter}>Get another cookie</button>
+      {/* Lo mismo que: button.addEventListener('click', incrementCounter) */}
+    </div>
+  );
+}
+
+
+----------------------------------🎯 Ejercicio:----------------------------------
+
+   - Crea una aplicación React que tenga una variable de estado que aumenta al hacer clic en un botón.
+   - Intenta agregar un botón que disminuya el número al hacer clic.
+   - Agrega un escucha de eventos que reinicie el número a 0 cuando hagas clic en el número mismo.
+
+ARCHIVO JSX:
+
+// Importamos React y el hook useState
+import React, { useState } from "react";
+
+// Definimos nuestro componente principal
+export default function CounterApp() {
+  // Definimos el estado usando useState, inicializado en 0
+  const [counter, setCounter] = useState(0);
+
+  // Función para incrementar el contador
+  const incrementCounter = () => {
+    setCounter(counter + 1);
+  };
+
+  // Función para decrementar el contador
+  const decrementCounter = () => {
+    setCounter(counter - 1);
+  };
+
+  // Función para reiniciar el contador
+  const resetCounter = () => {
+    setCounter(0);
+  };
+
+  // Renderizamos el componente
+  return (
+    <div>
+      <p>{counter} cookies.</p>
+      <button onClick={incrementCounter}>Get another cookie</button>
+      <button onClick={decrementCounter}>Eat a cookie</button>
+      <p onClick={resetCounter} style={{ cursor: "pointer", color: "blue" }}>
+        Click to reset
+      </p>
+    </div>
+  );
+}
+
+En este ejemplo:
+
+    Importamos React y el hook useState.
+    Creamos un componente funcional CounterApp.
+    Utilizamos useState para inicializar una variable de estado llamada counter con el valor inicial de 0.
+    Definimos funciones (incrementCounter, decrementCounter, y resetCounter) que modifican el estado.
+    Renderizamos un párrafo que muestra el valor actual del contador.
+    Creamos botones que llaman a las funciones correspondientes cuando se hace clic.
+    También agregamos un párrafo que actúa como un botón para reiniciar el contador al hacer clic.

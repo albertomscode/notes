@@ -1,0 +1,27 @@
+En la carpeta src se crea una carpeta llamada siempre components, asi en minuscula todo.
+y dentro cada archivo se escribe con mayuscula la primera letra de cada palabra UnEjemploAsi.jsx
+
+Ejemplo de un header:
+
+export default function PageHeader({ count }) {
+  return (
+    <>
+      <h1>State as props (and functions as props)</h1>
+      <p>
+        This is the same counter app we made before, but this time we have put
+        the button in a component, and we are passing the state variable and
+        event handler function as props
+      </p>
+      <p>The count is {count}</p>
+    </>
+  );
+}
+
+Ejemplo de boton:
+
+export default function CountButton({ handleCount }) {
+  return <button onClick={handleCount}>Increase count</button>;
+}
+
+
+Y luego se importan como pongo en el ejemplo del archivo 4-Archivojsx-Ejemplo.

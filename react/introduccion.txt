@@ -1,0 +1,25 @@
+React trabaja como una web SPA (single page application)... esto es lo de que tenemos una main.jsx como pagina principal html
+
+React es una libreria, no un framework (Otras librerias son angular(que solo usa typescript y no javascript y es de google) o vue (que utiliza tp y js y es de Comunidad)). Es una libreria de clases, de funciones (hooks)
+
+Fue construida por Facebook y es de codigo abierto.
+
+En react haremos esto:
+
+        -Velocidad (react tiene un renderizado super rapido con el DOM virtual.)
+        -Componentes(pequenos bloques reutilizables. Los componentes pueden ser tanto páginas como simples botones. Los componentes se pasan info
+         a traves de props)
+        -Desarrollo declarativo (se van a usar funciones que devuelven returns y se usan estados. Esto también se refiere a que usando react, cuando se
+         actualiza una page de la pagina web, solo se actualiza esa y no todas las page del proyecto , por lo tamnto el renderizado es mas rápido)
+        -Anidacion de componentes (podemos tener componentes de orden superior e inferior. Primero se crea el componente principal que es el superior
+         y de ahí se van a los inferiores. En el superior se suele poner los datos y funciones, y en los inferiores suelen in mas eventos y botones, cosas mas simples
+         y no paginas web completas.)
+        -Isomorfismo (esto quiere decir que en react el front y el back se usan en el mismo sitio y eso es bueno para el seo, posicionamiento, etc)
+        -Agilidad de desarrollo
+
+
+- Al lio. Vamos a instalar un proyecto con react y vite:
+
+Create a new project and install the vite package, @vitejs/plugin-react to support React, react itself, and react-dom so it works in the browser.
+
+npm install vite @vitejs/plugin-react react react-dom

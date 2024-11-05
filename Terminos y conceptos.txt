@@ -1,0 +1,2 @@
+Props: Propiedades
+Propiedades: lo que va dentro de los parentesis de una funcion creo.

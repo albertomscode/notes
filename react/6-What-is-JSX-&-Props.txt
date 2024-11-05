@@ -1,0 +1,48 @@
+
+-----------What is JSX?------------
+
+JavaScript eXtension, or JSX, is a syntax extension to JavaScript that allows us to write HTML-like code in our JavaScript files.
+It's not HTML, but it looks a lot like it. It's a way of writing HTML in JavaScript.
+
+Antes solo con dom:
+
+function MyComponent() {
+  return React.createElement("div", null, "Hello, world!");
+}
+
+Ahora con jsx:
+
+function MyComponent() {
+  return <div>Hello, world!</div>;
+}
+
+
+---------------Props---------------
+
+Props are the inputs to the component function - just like arguments to a function. You pass props like you use HTML attributes, 
+and they are available inside the component function as an object. We usually call the object props but you could call it anything.
+
+function MyComponent(props) {
+  return <div>Hello, {props.name}!</div>;
+}
+
+<MyComponent name="world" />;
+
+
+You can pass multiple attributes to the Component and read multiple values from the props object.
+
+function MyComponent(props) {
+  return (
+    <div>
+      Hello, {props.firstName} {props.lastName}!
+    </div>
+  );
+}
+
+<MyComponent firstName="John" lastName="Smith" />;
+
+
+💭 You can't change props inside a component directly, they are read-only. This is how we make sure things stay in sync. 
+The data comes from outside the component. The component renders what it is given. If it needs to change the data, there are other ways. 
+This is called "uni-directional data flow", and is one of the core principles of React's approach.
+

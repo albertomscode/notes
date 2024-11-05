@@ -1,0 +1,31 @@
+Un metodo o method es una palabra preestablecida ya en javascript
+
+Le pregunté a chatGPT cuales son las libraries mas importantes:
+
+    Lenguaje C++:
+        Standard Template Library (STL): Proporciona una serie de plantillas y algoritmos que simplifican la programación en C++.
+
+    Lenguaje Python:
+        NumPy: Biblioteca para realizar cálculos numéricos, especialmente útil para trabajar con matrices y operaciones matemáticas.
+        Pandas: Ofrece estructuras de datos y herramientas para el análisis de datos.
+        TensorFlow / PyTorch: Bibliotecas de aprendizaje automático (machine learning) ampliamente utilizadas.
+        Django / Flask: Frameworks web para desarrollar aplicaciones web en Python.
+
+    Lenguaje JavaScript:
+        React: Biblioteca para construir interfaces de usuario interactivas.
+        Vue.js: Framework progresivo para construir interfaces de usuario.
+        jQuery: Biblioteca que simplifica la manipulación del DOM y la interacción con el servidor.
+        Express.js: Framework web para Node.js, utilizado para crear aplicaciones web y APIs.
+
+    Lenguaje Java:
+        Java Standard Library: Proporciona funcionalidades básicas para el desarrollo en Java, incluyendo colecciones, entrada/salida, y networking.
+        Apache Commons: Conjunto de bibliotecas Java que proporciona funcionalidades comunes y reutilizables.
+        Spring Framework: Framework de aplicación empresarial para Java, que facilita el desarrollo de aplicaciones robustas.
+
+    Lenguaje PHP:
+        Laravel: Framework de desarrollo web que sigue el patrón de diseño MVC (Modelo-Vista-Controlador).
+        Symfony: Otro framework PHP para desarrollar aplicaciones web y APIs.
+        PHPUnit: Biblioteca para realizar pruebas unitarias en PHP.
+
+Estas son solo algunas de las bibliotecas más importantes y populares en sus respectivos campos, pero hay muchas más disponibles para una amplia 
+gama de lenguajes y propósitos.

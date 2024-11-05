@@ -1,0 +1,26 @@
+En next.js hay tres maneras de crear css:
+
+    1. En el archigo global.css
+    2. Usando Tailwind
+    3.Usando el archivo css.module.css
+
+Para cualquiera de los 3, asegurate de que haces el import en el Layout: import "./globals.css";
+
+Wait! Si vas a usar Tailwind, deja estas tres cosas de tailwind antes de borras los estilos predeterminados que vienen en el archivo
+global.css: 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Aunque creo que actualmente aparece así:
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+Déjalo de la manera que venga.
+
+Para instalar tailwind en un proyecto react con next.js:
+
+https://tailwindcss.com/docs/installation

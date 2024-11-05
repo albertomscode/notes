@@ -1,0 +1,16 @@
+
+--------------OBJETO--------------
+
+const nombreejemplo = {
+    name: "bob",
+    age: 30,
+    favouriteColor: "red",
+};
+
+console.log(nombreejemplo);
+
+----------------PARA ACCEDER A UNA PROPERTY:---------------------
+
+console.log (nombreejemplo.name); ||Output: Bob
+console.log (nombreejemplo.age); ||Output: 30
+console.log (nombreejemplo.favouriteColor); ||Output: red

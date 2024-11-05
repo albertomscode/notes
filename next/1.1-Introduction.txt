@@ -1,0 +1,40 @@
+Creado por Vercel, Next. js es un framework que permite a los desarrolladores crear aplicaciones de página única y aplicaciones web de alto 
+rendimiento a través de la renderización del lado del servidor.
+
+Lo que verás en el curso (overview):
+
+Overview
+
+    Styling: The different ways to style your application in Next.js.
+    Optimizations: How to optimize images, links, and fonts.
+    Routing: How to create nested layouts and pages using file-system routing.
+    Data Fetching: How to set up a database on Vercel, and best practices for fetching and streaming.
+    Search and Pagination: How to implement search and pagination using URL Search Params.
+    Mutating Data: How to mutate data using React Server Actions, and revalidate the Next.js cache.
+    Error Handling: How to handle general and 404 not found errors.
+    Form Validation and Accessibility: How to do server-side form validation and tips for improving accessibility.
+    Authentication: How to add authentication to your application using NextAuth.js and Middleware.
+    Metadata: How to add metadata and prepare your application for social sharing.
+
+Vamos allá. Abre la terminal y escribe esto tal cual está escrito:
+
+npx create-next-app@latest --use-npm
+
+Para las siguientes preguntas es: No, YES, NO, YES, YES,, NO
+
+Una vez dentro del visual studio puedes crear estas carpetas que sirven para esto (la carpeta de app ya viene creada por defecto):
+
+
+    /app: Contiene todas las rutas, componentes y lógica de su aplicación; aquí es desde donde trabajará principalmente.
+    /app/lib: Contiene funciones utilizadas en su aplicación, como funciones de utilidad reutilizables y funciones de recuperación de datos.
+    /app/ui: contiene todos los componentes de la interfaz de usuario para su aplicación, como tarjetas, tablas y formularios. Para ahorrar tiempo, hemos prediseñado estos componentes para usted.
+    /public: Contiene todos los activos estáticos de su aplicación, como IMAGENES.
+    /scripts: Contiene un script de inicialización que utilizará para completar su base de datos en un capítulo posterior (osea ser, el seed.js... aunque es mas complejo que todo esto porque he visto un video en youtube donde aparece mas cosas que la creacion de tablas, aparecen tambien los await para hacer el fetch con la database)
+    Config files: también notará archivos de configuración, como los que next.config.jsse encuentran en la raíz de su aplicación. La mayoría de estos archivos se crean y preconfiguran cuando inicias un nuevo proyecto usando create-next-app. No necesitarás modificarlos en este curso.
+
+
+
+function addPost () {
+    const post1 = [{}, {}, {}];
+    const persona =    
+}

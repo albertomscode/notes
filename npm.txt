@@ -1,0 +1,31 @@
+- npm es un administrador de paquetes.
+
+- npm i y npm install es lo mismo y sirve para instalar npm en el terminal
+
+- Node.js y npm son dos cosas diferentes, aunque a menudo se utilizan juntas en el desarrollo de aplicaciones web.
+
+    Node.js: Es un entorno de ejecución de JavaScript del lado del servidor. Permite a los desarrolladores ejecutar código
+             JavaScript en el servidor, lo que facilita la construcción de aplicaciones web escalables y de alto rendimiento.
+
+    npm (Node Package Manager): Es el sistema de gestión de paquetes para Node.js. Se utiliza para instalar, compartir y gestionar 
+    dependencias de proyectos de Node.js. npm permite a los desarrolladores acceder y utilizar una amplia variedad de 
+    paquetes (bibliotecas y herramientas) escritos en JavaScript.
+
+En resumen, Node.js proporciona el entorno de ejecución para JavaScript en el servidor, mientras que npm es una herramienta que ayuda 
+a gestionar las dependencias y paquetes de JavaScript utilizados en un proyecto Node.js. Puedes tener Node.js instalado sin tener npm, 
+pero a menudo se instalan juntos para facilitar el desarrollo de aplicaciones.
+
+
+Tambien le pregunté a chatGPT:
+
+Node.js es una plataforma de desarrollo de aplicaciones de servidor basada en JavaScript. Más específicamente, Node.js es un entorno de 
+ejecución de JavaScript que permite ejecutar código JavaScript del lado del servidor. Node.js en sí mismo no es ni un framework ni una biblioteca 
+en el sentido convencional de esos términos.
+
+Sin embargo, Node.js proporciona acceso a un ecosistema rico y diverso de bibliotecas (también conocidas como paquetes o módulos) 
+a través de npm (Node Package Manager), que es el administrador de paquetes de Node.js. Estas bibliotecas pueden ser utilizadas para 
+una amplia gama de propósitos, incluyendo el desarrollo de aplicaciones web, APIs, aplicaciones de línea de comandos, entre otros.
+
+Además, hay frameworks construidos sobre Node.js que facilitan el desarrollo de aplicaciones web y APIs, como Express.js, Koa.js, y Nest.js. 
+Estos frameworks proporcionan una estructura y una serie de herramientas que facilitan el desarrollo de aplicaciones web y APIs en Node.js, 
+pero Node.js en sí mismo no es un framework ni una biblioteca.
