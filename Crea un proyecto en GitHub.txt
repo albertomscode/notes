@@ -1,0 +1,80 @@
+Para crear un proyecto en tu ordenador, enlazarlo a tu perfil de GitHub y trabajar desde Visual Studio Code en Ubuntu, puedes seguir estos pasos:
+1. Crear el Proyecto Localmente
+
+    Abre la terminal en Ubuntu o desde Visual Studio Code (Terminal -> New Terminal).
+
+    Crea una carpeta para tu proyecto con el siguiente comando:
+
+mkdir nombre-del-proyecto
+
+Cambia nombre-del-proyecto por el nombre que desees.
+
+Navega a la carpeta que acabas de crear:
+
+cd nombre-del-proyecto
+
+Inicializa un repositorio de Git:
+
+    git init
+
+    Esto creará un repositorio Git vacío en la carpeta.
+
+2. Crear un Repositorio en GitHub
+
+    Inicia sesión en GitHub y dirígete a la página de Crear un nuevo repositorio.
+    Completa la información del repositorio:
+        Nombre del repositorio: Usa el mismo nombre de tu proyecto si lo prefieres.
+        Opcionalmente, añade una descripción y selecciona si el repositorio será público o privado.
+    Haz clic en Create repository.
+
+3. Enlazar el Proyecto Local con GitHub
+
+    En la terminal (asegúrate de estar en la carpeta de tu proyecto), agrega el repositorio remoto de GitHub con este comando, reemplazando <URL-del-repositorio> con la URL del repositorio que acabas de crear en GitHub (la URL suele tener el formato https://github.com/tu-usuario/nombre-del-repositorio.git):
+
+git remote add origin <URL-del-repositorio>
+
+Verifica que el enlace se agregó correctamente:
+
+    git remote -v
+
+    Debes ver origin apuntando a la URL de tu repositorio en GitHub.
+
+4. Crear un Commit Inicial y Subir el Proyecto a GitHub
+
+    Crea un archivo inicial en el proyecto (por ejemplo, un README.md) para hacer tu primer commit:
+
+echo "# nombre-del-proyecto" >> README.md
+
+Añade todos los archivos al área de preparación de Git:
+
+git add .
+
+Realiza el primer commit:
+
+git commit -m "Primer commit"
+
+Sube el proyecto a GitHub:
+
+    git push -u origin main
+
+    Nota: Si estás usando una rama diferente a main, reemplaza main por el nombre de la rama que estés usando.
+
+5. Confirmar en GitHub
+
+    Ve a tu repositorio en GitHub y verifica que el archivo README.md y el commit inicial estén presentes.
+
+6. Trabajar desde Visual Studio Code
+
+    Abre la carpeta del proyecto en Visual Studio Code: Ve a File > Open Folder y selecciona la carpeta nombre-del-proyecto.
+    Ahora puedes trabajar en el proyecto desde Visual Studio Code. Cada vez que realices cambios y quieras subirlos a GitHub:
+        Guarda los cambios.
+        Haz un nuevo commit:
+
+git add .
+git commit -m "Descripción de los cambios"
+
+Sube los cambios a GitHub:
+
+        git push
+
+¡Listo! Ahora tu proyecto está enlazado entre tu máquina local y tu perfil de GitHub, y puedes trabajar desde Visual Studio Code.
