@@ -1,0 +1,59 @@
+En este ejemplo de array tengo un array grande creado, y en ese array tengo creados muchos arrays pequenos:
+
+const employeeNames = [
+    { name: "Aria Thompson" }, ||Array 1
+    { name: "Elijah Parker" }, ||Array 2
+    { name: "Olivia Reynolds" }, ||Array 3
+    { name: "Jackson Mitchell" }, ||Array 4
+    { name: "Sophia Turner" }, ||Array 5
+    { name: "Liam Hayes" }, ||Array 6
+    { name: "Ava Cooper" },
+    { name: "Lucas Bennett" },
+    { name: "Emma Henderson" },
+    { name: "Logan Phillips" },
+    { name: "Isabella Simmons" },
+    { name: "Mason Foster" },
+    { name: "Amelia Jenkins" },
+    { name: "Caden Murphy" },
+    { name: "Mia Griffin" },
+    { name: "Oliver Russell" },
+    { name: "Harper Moore" },
+    { name: "Carter Hayes" },
+    { name: "Abigail Parker" },
+    { name: "Landon Turner" },
+    { name: "Grace Henderson" },
+    { name: "Ethan Mitchell" },
+    { name: "Chloe Reynolds" },
+    { name: "Wyatt Simmons" },
+    { name: "Madison Bennett" },
+    { name: "Grayson Jenkins" },
+    { name: "Lily Phillips" },
+    { name: "Layla Foster" },
+    { name: "Noah Simmons" },
+    { name: "Zoe Turner" },
+    { name: "Evelyn Russell" },
+    { name: "Landon Parker" },
+    { name: "Scarlett Griffin" },
+    { name: "Benjamin Hayes" },
+    { name: "Avery Moore" },
+    { name: "Hudson Jenkins" },
+    { name: "Ellie Mitchell" },
+    { name: "Lincoln Foster" }, ||Array 37
+    { name: "Sofia Bennett" }, ||Array 38
+    { name: "Henry Reynolds" }, ||Array 39
+  ];
+
+  console.log (employeeNames); || Output: te saldrá la lista entera.
+  console.log (employeeNames[1]); || Output: Elijah Parker
+  console.log (employeeNames[3]); || Output: Jackson Mitchell
+
+
+  -----------Otro ejemplo----------
+
+  Tambien lo puedes ver asi:
+
+  const randomList = new array ("Alberto Moreno", "El 22 de abril", 52, true);
+
+  console.log (employeeNames); || Output: te saldrá la lista entera.
+  console.log (employeeNames[1]); || Output: El 22 de abril
+  console.log (employeeNames[3]); || Output: true
