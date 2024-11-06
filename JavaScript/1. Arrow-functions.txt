@@ -1,3 +1,5 @@
+Las Arrow functions son exactamente lo mismo que las functions pero mejoradas, mejoradas porque son mas resumidas y practicas.
+RESUMEN: Basicamente cuando veas un "=>" es una funcion.
 
 ----------------ANTES----------------
 
@@ -22,9 +24,6 @@ RESUMEN: Basicamente cuando veas un "=>" es una funcion.
 -------
 
 
-Buscar ejemplos reales para entender los callbacks.
-
-
 --------------Ejemplo 1-----------------
 
 
@@ -41,4 +40,33 @@ function isButtonDisabled(key) {
     } else {
       return;
     }
+  }
+
+
+--------------Ejemplo 2-----------------
+
+  function disableKeys(myArray, guessarray) {
+    myArray.forEach((item, index) => {
+      if (item === 0) {
+        // setDisabledButtons(disabledButtons.push(guessarray[index]));
+        setDisabledButtons((prevButtons) => [...prevButtons, guessarray[index].toUpperCase()]);
+      }
+      //runToast(disabledButtons);
+    });
+  }
+
+  ---------TO-DO LIST---------
+
+  Buscar ejemplos reales para entender los callbacks.
+
+
+  function getPost (){
+    const post = await sql`
+
+    const person = [
+      {name:"rodrigo",
+      age: 32},
+      {}
+    ]
+    console.log (person[]);
   }
